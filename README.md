@@ -3,7 +3,7 @@ simple video chat project using webrtc
 
 1. change server ip address in the ./server/index.js
 
-server.listen(3000, {YOUR IP ADDRESS HERE }, ()=>console.log("video chat sever initialized));
+server.listen(3000, {server computer's ip address  }, ()=>console.log("video chat sever initialized));
 
 
 2. create bundle command : npm run react-dev
@@ -12,4 +12,4 @@ server.listen(3000, {YOUR IP ADDRESS HERE }, ()=>console.log("video chat sever i
 
 4. the certificates are super basic so access server from mozilla and dismiss sercurity warning 
 
-5. access in browser at https:// {YOUR IP ADDRESS} :3000
+5. access in browser at https:// {server computer's ip address} :3000
