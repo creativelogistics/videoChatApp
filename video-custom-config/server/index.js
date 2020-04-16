@@ -8,8 +8,8 @@ app.use(express.static('public'))
 const fs = require('fs');
 const path = require('path')
 
-const key = path.join(__dirname,'key.pem')
-var cert = path.join(__dirname,'cert.pem')
+const key = path.join(__dirname,'certificate.key')
+var cert = path.join(__dirname,'certificate.crt')
 const options = {
   key: fs.readFileSync(key),
   cert: fs.readFileSync(cert)
