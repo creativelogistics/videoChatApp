@@ -19,8 +19,7 @@ const server = require('https').createServer(options,app);
 const io = require('socket.io')(server);
 
 // need to have ip address of whatever machine its running on
-server.listen(3000, '10.0.0.130',()=>console.log('video chat sever initialized'));
-
+server.listen(3000,()=>console.log('video chat sever initialized'));
 let users = {}
 
 io.on('connection', socket => { 

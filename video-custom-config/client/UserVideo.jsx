@@ -4,7 +4,7 @@ const Video  = (props) =>{
     return(
         <video 
         playsInline 
-        muted 
+        muted
         ref={props.stream} 
         autoPlay
             id="player" 

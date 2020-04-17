@@ -1,11 +1,11 @@
 import React from 'react';
 
-import VideoItem from './VideoItem.jsx';
+import VideoItem from './UserVideo.jsx';
 
 const Videos = (props) => {
     return(
         <div>
-            <VideoItem stream ={props.stream}></VideoItem>
+            <VideoItem audio = {props.audio} stream ={props.stream}></VideoItem>
 
         </div>
     )

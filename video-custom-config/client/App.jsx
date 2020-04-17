@@ -3,9 +3,12 @@ import React , {createRef} from "react"
 import Login from './Login.js'
 import io from "socket.io-client"
 import UserList from "./UserList.jsx"
-import Video from "./Video.jsx"
+import PartnerVideo from "./PartnerVideo.jsx"
+import UserVideo from "./UserVideo.jsx"
+
 import Peer from 'simple-peer'
 import Canvas from "./Canvas.jsx"
+
 
 class  App extends React.Component {
   constructor(props){
@@ -150,9 +153,9 @@ class  App extends React.Component {
         return(
           <div>
             <p>partner video</p>
-            <Video  stream ={this.partnerVideo}></Video>
+            <PartnerVideo  stream ={this.partnerVideo}></PartnerVideo>
             <p>user video</p>
-            <Video  stream ={this.userVideo}></Video>
+            <UserVideo  stream ={this.userVideo}></UserVideo>
           </div>
         ) 
       }else {
